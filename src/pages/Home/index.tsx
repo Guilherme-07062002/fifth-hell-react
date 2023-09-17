@@ -1,9 +1,9 @@
 import { Container, Typography, Grid, Button, Paper } from "@mui/material";
 
-/**
- * Renderiza a página inicial
- */
+/** Renderiza a página inicial */
 const Home = () => {
+  /**Redireciona de página */
+  function redirectPage() {}
   return (
     <Container
       component="main"
@@ -41,7 +41,7 @@ const Home = () => {
           </Typography>
         </Paper>
 
-        <Button variant="contained" color="error">
+        <Button variant="contained" color="error" onClick={redirectPage}>
           <Typography
             style={{
               fontSize: "2rem",
