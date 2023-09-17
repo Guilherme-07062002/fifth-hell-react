@@ -1,11 +1,10 @@
-import { Container, Typography, Grid, Button, Paper } from "@mui/material";
+import { Container, Typography, Grid, Paper } from "@mui/material";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
-/** Renderiza a página inicial */
-const Home = () => {
+/** Renderiza o cenário */
+const Scenario = () => {
   useEffect(() => {
-    document.title = "Home";
+    document.title = "Scenario";
   });
 
   return (
@@ -41,25 +40,12 @@ const Home = () => {
               textAlign: "center",
             }}
           >
-            Fifth of Hell
+            Scenario
           </Typography>
         </Paper>
-
-        <Button variant="contained" color="error">
-          <Link to="/scenario">
-            <Typography
-              style={{
-                fontSize: "2rem",
-                color: "white",
-              }}
-            >
-              Play
-            </Typography>
-          </Link>
-        </Button>
       </Grid>
     </Container>
   );
 };
 
-export default Home;
+export default Scenario;
