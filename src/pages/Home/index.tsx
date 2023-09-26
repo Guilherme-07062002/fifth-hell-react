@@ -1,4 +1,4 @@
-import { Container, Typography, Grid, Button, Paper } from "@mui/material";
+import { Container, Typography, Grid, Button } from "@mui/material";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -13,9 +13,10 @@ const Home = () => {
       component="main"
       maxWidth={false}
       sx={{
-        padding: { xs: 1, sm: 3 },
-        marginY: 1,
-        maxWidth: { xl: "90%" },
+        height: "100vh",
+        backgroundImage: 'url("/src/public/images/frame.png")',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Grid
@@ -23,38 +24,20 @@ const Home = () => {
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
-        gap={"40vh"}
+        justifyContent={"end"}
+        height={"100vh"}
       >
-        <Paper
-          elevation={3}
-          sx={{
-            width: "80vw",
-            height: "20vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+        <Button
+          variant="contained"
+          color="error"
+          size="large"
+          sx={{ marginBottom: 10, width: "10%" }}
         >
-          <Typography
-            style={{
-              fontSize: "3rem",
-              textAlign: "center",
-            }}
+          <Link
+            style={{ color: "white", textDecoration: "none", fontSize: '2rem' }}
+            to="/scenario"
           >
-            Fifth of Hell
-          </Typography>
-        </Paper>
-
-        <Button variant="contained" color="error">
-          <Link to="/scenario">
-            <Typography
-              style={{
-                fontSize: "2rem",
-                color: "white",
-              }}
-            >
-              Play
-            </Typography>
+            Play
           </Link>
         </Button>
       </Grid>
