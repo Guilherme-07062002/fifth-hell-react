@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Button } from "@mui/material";
 
-export const StyledOptionButton = styled(Button)`
+export const StyledOptionDiceButton = styled(Button)`
   && {
-    width: 90%;
+    height: "50%";
   }
 `;
