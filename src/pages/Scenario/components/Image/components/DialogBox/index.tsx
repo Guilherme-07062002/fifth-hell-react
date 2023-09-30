@@ -1,21 +1,13 @@
-import { Box, Typography } from "@mui/material";
+import {
+  StyledDialogBox as Box,
+  StyledDialogBoxText as Typography,
+} from "./styled";
 
 /** Render dialog box in Image */
 export const DialogBox = () => {
   return (
-    <Box
-      component="div"
-      sx={{
-        height: "auto",
-        transition: "all 0.5s ease",
-        width: "100%",
-        backgroundColor: "black",
-        position: "absolute",
-        bottom: 0,
-        padding: "1rem",
-      }}
-    >
-      <Typography style={{ color: "#fffff", textAlign: "justify" }}>
+    <Box component="div">
+      <Typography>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         ultrices nisl sed enim finibus, a ultricies ligula pharetra. Fusce leo
         mauris, pretium in pharetra at, suscipit sed mi. Nulla vel urna nec diam
