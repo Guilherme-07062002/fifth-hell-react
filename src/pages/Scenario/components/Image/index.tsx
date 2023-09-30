@@ -9,32 +9,39 @@ const Image = () => {
         sx={{
           height: "90vh",
           backgroundColor: "#151926",
+          position: "relative",
         }}
       >
         <Typography
           textAlign={"left"}
-          sx={{ marginLeft: 3, paddingY: 1, color: "white", fontSize: "2rem" }}
+          sx={{
+            marginLeft: 3,
+            paddingY: 1,
+            color: "white",
+            fontSize: "2rem",
+            position: "absolute",
+          }}
         >
           Scenario
         </Typography>
+        <Box
+          component="div"
+          sx={{
+            height: "30%",
+            width: "100%",
+            backgroundColor: "black",
+            position: "absolute",
+            opacity: 0.7,
+            bottom: 0,
+          }}
+        />
         <Box
           component="img"
           src="/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png"
           sx={{
             width: "100%",
+            height: "100%",
             zIndex: 0,
-          }}
-        />
-        <Box
-          component="div"
-          sx={{
-            height: "20%",
-            width: "100%",
-            backgroundColor: "black",
-            zIndex: 1,
-            position: "relative",
-            bottom: "17%",
-            opacity: 0.7,
           }}
         />
       </Paper>
