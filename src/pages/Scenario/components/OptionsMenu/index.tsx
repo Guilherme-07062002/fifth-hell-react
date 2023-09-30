@@ -1,30 +1,13 @@
-import { Grid, Paper, Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import { OptionButton, OptionDiceButton } from "./components";
+import { StyledPaper as Paper, StyledBox as Box } from "./styled";
 
 /** Render options menu in scenario */
 const OptionsMenu = () => {
   return (
     <Grid item xs={4}>
-      <Paper
-        elevation={3}
-        sx={{
-          paddingY: 2,
-          height: "90vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-around",
-          alignItems: "center",
-          backgroundColor: "#151926",
-        }}
-      >
-        <Box
-          sx={{
-            backgroundColor: "#BF0A4C",
-            height: "50%",
-            width: "90%",
-            borderRadius: "10px",
-          }}
-        />
+      <Paper elevation={3}>
+        <Box />
         <Grid
           container
           sx={{
