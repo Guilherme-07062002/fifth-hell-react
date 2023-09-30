@@ -4,7 +4,7 @@ type OptionDiceButtonProps = {
 };
 
 /** Render button in options menu */
-const OptionDiceButton = (data: OptionDiceButtonProps) => {
+export const OptionDiceButton = (data: OptionDiceButtonProps) => {
   return (
     <Grid item xs={2.4}>
       <Button
@@ -19,4 +19,3 @@ const OptionDiceButton = (data: OptionDiceButtonProps) => {
   );
 };
 
-export default OptionDiceButton;

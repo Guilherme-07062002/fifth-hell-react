@@ -1,5 +1,5 @@
-import { Grid, Paper, Box, Button } from "@mui/material";
-import OptionDiceButton from "./components/OptionDiceButton";
+import { Grid, Paper, Box } from "@mui/material";
+import { OptionButton, OptionDiceButton } from "./components";
 
 /** Render options menu in scenario */
 const OptionsMenu = () => {
@@ -39,14 +39,7 @@ const OptionsMenu = () => {
           <OptionDiceButton label="D10" />
           <OptionDiceButton label="D20" />
         </Grid>
-        <Button
-          variant="contained"
-          color="error"
-          size="large"
-          sx={{ width: "90%" }}
-        >
-          Next
-        </Button>
+        <OptionButton label="Next" />
       </Paper>
     </Grid>
   );
