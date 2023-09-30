@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Paper, Box, Grid } from "@mui/material";
+import { Paper, Grid } from "@mui/material";
 
 export const StyledPaper = styled(Paper)`
   && {
@@ -12,15 +12,6 @@ export const StyledPaper = styled(Paper)`
     justify-content: space-around;
     align-items: center;
     background-color: #151926;
-  }
-`;
-
-export const StyledBox = styled(Box)`
-  && {
-    background-color: #bf0a4c;
-    height: 50%;
-    width: 80%;
-    border-radius: 10px;
   }
 `;
 
