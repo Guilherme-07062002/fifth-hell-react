@@ -4,7 +4,7 @@ import { StyledPaper as Paper, StyledGrid as Grid } from "./styled";
 /** Render options menu in scenario */
 const OptionsMenu = () => {
   return (
-    <Grid item xs={4}>
+    <Grid item xs={12} sm={4}>
       <Paper elevation={3}>
         <DiceBox />
         <OptionDiceButtonContainer />

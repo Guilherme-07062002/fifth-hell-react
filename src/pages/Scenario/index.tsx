@@ -10,11 +10,7 @@ const Scenario = () => {
   });
 
   return (
-    <Container
-      component="main"
-      maxWidth={false}
-      sx={{ padding: { xs: 1, sm: 3 } }}
-    >
+    <Container component="main" maxWidth={false} sx={{ paddingY: { xs: 4 } }}>
       <Grid container>
         <Image />
         <OptionsMenu />
