@@ -1,4 +1,4 @@
-import Typography from "@mui/material/Typography";
+import { StyledTypography as Typography } from "./styled";
 
 type TitleProps = {
   label: string;
@@ -8,18 +8,5 @@ type TitleProps = {
 export const Title = (data: TitleProps) => {
   const { label } = data;
 
-  return (
-    <Typography
-      textAlign={"left"}
-      sx={{
-        marginLeft: 3,
-        paddingY: 1,
-        color: "white",
-        fontSize: "2rem",
-        position: "absolute",
-      }}
-    >
-      {label}
-    </Typography>
-  );
+  return <Typography>{label}</Typography>;
 };
