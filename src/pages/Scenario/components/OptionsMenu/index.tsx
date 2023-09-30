@@ -1,5 +1,5 @@
 import { Grid, Paper, Box, Button } from "@mui/material";
-import OptionDiceButton from "./OptionDiceButton";
+import OptionDiceButton from "./components/OptionDiceButton";
 
 /** Render options menu in scenario */
 const OptionsMenu = () => {
