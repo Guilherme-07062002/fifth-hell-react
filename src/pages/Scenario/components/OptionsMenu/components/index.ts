@@ -1,2 +1,3 @@
-export * from './OptionButton';
-export * from './OptionDiceButton';
+export * from "./OptionButton";
+export * from "./OptionDiceButton";
+export * from "./OptionDiceButtonContainer";

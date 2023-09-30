@@ -3,6 +3,6 @@ import { Button } from "@mui/material";
 
 export const StyledOptionButton = styled(Button)`
   && {
-    width: 90%;
+    width: 80%;
   }
 `;
