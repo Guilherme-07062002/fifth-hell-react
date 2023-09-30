@@ -1,4 +1,5 @@
 import { Grid, Paper, Box, Button } from "@mui/material";
+import OptionDiceButton from "./OptionDiceButton";
 
 /** Render options menu in scenario */
 const OptionsMenu = () => {
@@ -33,46 +34,10 @@ const OptionsMenu = () => {
             justifyContent: "space-around",
           }}
         >
-          <Grid item xs={2.4}>
-            <Button
-              variant="contained"
-              color="error"
-              size="large"
-              sx={{ height: "50%" }}
-            >
-              D6
-            </Button>
-          </Grid>
-          <Grid item xs={2.4}>
-            <Button
-              variant="contained"
-              color="error"
-              size="large"
-              sx={{ height: "50%" }}
-            >
-              D8
-            </Button>
-          </Grid>
-          <Grid item xs={2.7}>
-            <Button
-              variant="contained"
-              color="error"
-              size="large"
-              sx={{ height: "50%" }}
-            >
-              D10
-            </Button>
-          </Grid>
-          <Grid item xs={2.4}>
-            <Button
-              variant="contained"
-              color="error"
-              size="large"
-              sx={{ height: "50%" }}
-            >
-              D20
-            </Button>
-          </Grid>
+          <OptionDiceButton label="D6" />
+          <OptionDiceButton label="D8" />
+          <OptionDiceButton label="D10" />
+          <OptionDiceButton label="D20" />
         </Grid>
         <Button
           variant="contained"
@@ -80,23 +45,7 @@ const OptionsMenu = () => {
           size="large"
           sx={{ width: "90%" }}
         >
-          Opção
-        </Button>
-        <Button
-          variant="contained"
-          color="error"
-          size="large"
-          sx={{ width: "90%" }}
-        >
-          Opção
-        </Button>
-        <Button
-          variant="contained"
-          color="error"
-          size="large"
-          sx={{ width: "90%" }}
-        >
-          Opção
+          Next
         </Button>
       </Paper>
     </Grid>
