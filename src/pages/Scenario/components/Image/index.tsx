@@ -1,22 +1,13 @@
-import { Grid, Typography, Box } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import { StyledPaper as Paper } from "./styled";
+import { Title } from "./components";
+
 /** Render Image in Scenario */
 const Image = () => {
   return (
     <Grid item xs={8}>
       <Paper elevation={3}>
-        <Typography
-          textAlign={"left"}
-          sx={{
-            marginLeft: 3,
-            paddingY: 1,
-            color: "white",
-            fontSize: "2rem",
-            position: "absolute",
-          }}
-        >
-          Scenario
-        </Typography>
+        <Title label="Scenario" />
         <Box
           component="div"
           sx={{
