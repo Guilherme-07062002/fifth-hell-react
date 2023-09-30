@@ -9,7 +9,7 @@ export const Image = () => {
       <Paper elevation={3}>
         <Title label="Scenario" />
         <DialogBox />
-        <BackgroundImage />
+        <BackgroundImage src="/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png" />
       </Paper>
     </Grid>
   );
