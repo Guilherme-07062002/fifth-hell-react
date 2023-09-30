@@ -1,6 +1,6 @@
-import { Container, Typography, Grid, Button } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { PlayButton } from "./components/PlayButton";
 
 /** Renderiza a página inicial */
 const Home = () => {
@@ -14,9 +14,10 @@ const Home = () => {
       maxWidth={false}
       sx={{
         height: "100vh",
-        backgroundImage: 'url("/src/public/images/frame.png")',
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        backgroundColor: "#151926",
+        // backgroundImage: 'url("/src/public/images/frame.png")',
+        // backgroundSize: "cover",
+        // backgroundRepeat: "no-repeat",
       }}
     >
       <Grid
@@ -27,19 +28,7 @@ const Home = () => {
         justifyContent={"end"}
         height={"100vh"}
       >
-        <Button
-          variant="contained"
-          color="error"
-          size="large"
-          sx={{ marginBottom: 10, width: "10%" }}
-        >
-          <Link
-            style={{ color: "white", textDecoration: "none", fontSize: '2rem' }}
-            to="/scenario"
-          >
-            Play
-          </Link>
-        </Button>
+        <PlayButton />
       </Grid>
     </Container>
   );
