@@ -4,7 +4,9 @@ type TitleProps = {
   label: string;
 };
 
-/** Render Title in Image */
+/** Render Title in Image
+ * @param {string} label title label
+ */
 export const Title = (data: TitleProps) => {
   const { label } = data;
 
