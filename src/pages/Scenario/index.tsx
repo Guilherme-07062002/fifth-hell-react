@@ -1,4 +1,5 @@
-import { Container, Typography, Grid, Paper } from "@mui/material";
+import { Container, Typography, Grid, Paper, Box, Button } from "@mui/material";
+import Image from "./components/Image";
 import { useEffect } from "react";
 
 /** Renderiza o cenário */
@@ -13,36 +14,84 @@ const Scenario = () => {
       maxWidth={false}
       sx={{
         padding: { xs: 1, sm: 3 },
-        marginY: 1,
-        maxWidth: { xl: "90%" },
+        backgroundColor: "#1B2626",
+        height: "100vh",
       }}
     >
       <Grid
         container
         display={"flex"}
-        flexDirection={"column"}
         alignItems={"center"}
-        gap={"40vh"}
+        justifyContent={"space-around"}
       >
-        <Paper
-          elevation={3}
-          sx={{
-            width: "80vw",
-            height: "20vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Typography
-            style={{
-              fontSize: "3rem",
-              textAlign: "center",
+        <Image />
+
+        <Grid item xs={4}>
+          <Paper
+            elevation={3}
+            sx={{
+              height: "90vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: "#151926",
+              border: "solid 1px white",
             }}
           >
-            Scenario
-          </Typography>
-        </Paper>
+            <Box
+              sx={{
+                backgroundColor: "grey",
+                height: "50%",
+                width: "90%",
+              }}
+            />
+            <Box
+              sx={{
+                backgroundColor: "green",
+                height: "10%",
+                width: "90%",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography sx={{ color: "white" }}>Roll: </Typography>
+              <Button
+                variant="contained"
+                color="error"
+                size="large"
+                sx={{ width: "10%" }}
+              >
+                D12
+              </Button>
+            </Box>
+            <Button
+              variant="contained"
+              color="error"
+              size="large"
+              sx={{ width: "90%" }}
+            >
+              Opção
+            </Button>
+            <Button
+              variant="contained"
+              color="error"
+              size="large"
+              sx={{ width: "90%" }}
+            >
+              Opção
+            </Button>
+            <Button
+              variant="contained"
+              color="error"
+              size="large"
+              sx={{ width: "90%" }}
+            >
+              Opção
+            </Button>
+          </Paper>
+        </Grid>
       </Grid>
     </Container>
   );
