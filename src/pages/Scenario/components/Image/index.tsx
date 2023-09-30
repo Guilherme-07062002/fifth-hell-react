@@ -1,6 +1,6 @@
 import { Grid, Box } from "@mui/material";
 import { StyledPaper as Paper } from "./styled";
-import { Title } from "./components";
+import { Title, DialogBox } from "./components";
 
 /** Render Image in Scenario */
 const Image = () => {
@@ -8,17 +8,7 @@ const Image = () => {
     <Grid item xs={8}>
       <Paper elevation={3}>
         <Title label="Scenario" />
-        <Box
-          component="div"
-          sx={{
-            height: "30%",
-            width: "100%",
-            backgroundColor: "black",
-            position: "absolute",
-            opacity: 0.7,
-            bottom: 0,
-          }}
-        />
+        <DialogBox />
         <Box
           component="img"
           src="/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png"
