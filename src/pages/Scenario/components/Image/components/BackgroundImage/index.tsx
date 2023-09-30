@@ -1,21 +1,13 @@
-import { Box } from "@mui/material";
+import { StyledBackgroundImage as Box } from "./styled";
 
 type BackgroundImageProps = {
   src: string;
 };
 
-/** Render background image */
+/** Render background image
+ * @param {string} src image source
+ */
 export const BackgroundImage = (data: BackgroundImageProps) => {
   const { src } = data;
-  return (
-    <Box
-      component="img"
-      src={src}
-      sx={{
-        width: "100%",
-        height: "100%",
-        zIndex: 0,
-      }}
-    />
-  );
+  return <Box component="img" src={src} />;
 };
