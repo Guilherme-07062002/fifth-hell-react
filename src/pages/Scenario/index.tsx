@@ -1,7 +1,7 @@
-import { Container, Grid } from "@mui/material";
 import Image from "./components/Image";
 import OptionsMenu from "./components/OptionsMenu";
 import { useEffect } from "react";
+import { StyledContainer as Container, StyledGrid as Grid } from "./styled";
 
 /** Renderiza o cenário */
 const Scenario = () => {
@@ -13,18 +13,9 @@ const Scenario = () => {
     <Container
       component="main"
       maxWidth={false}
-      sx={{
-        padding: { xs: 1, sm: 3 },
-        backgroundColor: "#1B2626",
-        height: "100vh",
-      }}
+      sx={{ padding: { xs: 1, sm: 3 } }}
     >
-      <Grid
-        container
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={"space-around"}
-      >
+      <Grid container>
         <Image />
         <OptionsMenu />
       </Grid>
