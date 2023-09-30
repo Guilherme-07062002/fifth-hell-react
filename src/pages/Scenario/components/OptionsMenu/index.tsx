@@ -1,16 +1,12 @@
-import { OptionButton, OptionDiceButtonContainer } from "./components";
-import {
-  StyledPaper as Paper,
-  StyledBox as Box,
-  StyledGrid as Grid,
-} from "./styled";
+import { OptionButton, OptionDiceButtonContainer, DiceBox } from "./components";
+import { StyledPaper as Paper, StyledGrid as Grid } from "./styled";
 
 /** Render options menu in scenario */
 const OptionsMenu = () => {
   return (
     <Grid item xs={4}>
       <Paper elevation={3}>
-        <Box />
+        <DiceBox />
         <OptionDiceButtonContainer />
         <OptionButton label="Next" />
       </Paper>
