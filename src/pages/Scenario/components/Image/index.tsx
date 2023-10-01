@@ -1,6 +1,8 @@
 import { Grid } from "@mui/material";
 import { StyledPaper as Paper } from "./styled";
 import { Title, DialogBox, BackgroundImage } from "./components";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/state";
 
 /** Render Image in Scenario */
 export const Image = () => {

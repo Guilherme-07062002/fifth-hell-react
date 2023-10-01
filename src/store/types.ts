@@ -10,6 +10,6 @@ export interface AppData {
   };
 }
 
-export interface RootState {
+interface RootState {
   app: AppData;
 }
