@@ -3,12 +3,10 @@ export interface AppData {
   rollDices: boolean;
   currentStage: number;
   stages: {
-    [key: number]: {
-      title: string;
-      description: string;
-      image: string;
-    };
-  };
+    title: string;
+    description: string;
+    image: string;
+  }[];
 }
 
 export interface RootStateType {
