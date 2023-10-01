@@ -59,7 +59,6 @@ const appSlice = createSlice({
       }
     },
     setDiceValue: (state, action) => {
-      console.log("setDiceValue", action.payload);
       return {
         ...state,
         diceValue: action.payload,

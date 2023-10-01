@@ -14,8 +14,9 @@ export const OptionDiceButton = (data: OptionDiceButtonProps) => {
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(setRollDices(true));
-    dispatch(setDiceValue(Math.floor(Math.random() * sides) + 1));
+    dispatch(setDiceValue(null));
     setTimeout(() => {
+      dispatch(setDiceValue(Math.floor(Math.random() * sides) + 1));
       dispatch(setRollDices(false));
     }, 3000);
   };

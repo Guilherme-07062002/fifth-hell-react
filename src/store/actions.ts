@@ -51,7 +51,7 @@ export const advanceStage = (): AdvanceStageAction => ({
   type: ActionTypes.ADVANCE_STAGE,
 });
 
-export const setDiceValue = (diceValue: number): SetDiceValueAction => ({
+export const setDiceValue = (diceValue: number | null): SetDiceValueAction => ({
   type: ActionTypes.SET_DICE_VALUE,
-  payload: diceValue,
+  payload: diceValue as number,
 });
