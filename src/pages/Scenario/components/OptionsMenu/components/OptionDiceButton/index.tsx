@@ -21,7 +21,13 @@ export const OptionDiceButton = (data: OptionDiceButtonProps) => {
     }, 3000);
   };
   return (
-    <Grid item>
+    <Grid
+      item
+      xs={6}
+      sm={6}
+      md={2}
+      style={{ display: "flex", justifyContent: "center" }}
+    >
       <Button variant="contained" size="large" onClick={handleClick}>
         {label}
       </Button>

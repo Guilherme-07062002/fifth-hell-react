@@ -22,13 +22,15 @@ export const StyledPaper = styled(Paper)`
 export const StyledGrid = styled(Grid)`
   && {
     width: 80%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     @media (max-width: 600px) {
-      justify-content: space-between;
+      height: 100%;
       margin-bottom: 5%;
-      margin-top: 500 !important;
     }
   }
 `;
