@@ -14,7 +14,7 @@ export const Image = () => {
     <Grid item xs={12} sm={8}>
       <Paper elevation={3}>
         <Title label={title} />
-        <DialogBox />
+        <DialogBox text={description} />
         <BackgroundImage src={image} />
       </Paper>
     </Grid>
