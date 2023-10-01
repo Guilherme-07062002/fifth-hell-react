@@ -1,6 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+export const initialState = {
   isLoading: false,
   rollDices: false,
   currentStage: 0,
