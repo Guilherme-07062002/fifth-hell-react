@@ -8,6 +8,9 @@ export const StyledHomeTitle = styled(Typography)`
     font-size: 10rem;
     text-align: center;
     font-family: "Thertole", sans-serif;
+    @media (max-width: 600px) {
+      font-size: 6rem;
+    }
   }
   @font-face {
     font-family: "Thertole";
