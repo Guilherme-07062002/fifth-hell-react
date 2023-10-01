@@ -5,7 +5,7 @@ import Alagard from "./assets/fonts/Alagard.ttf";
 export const StyledTypography = styled(Typography)`
   && {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     position: absolute;
     top: 2%;
     left: 3%;
