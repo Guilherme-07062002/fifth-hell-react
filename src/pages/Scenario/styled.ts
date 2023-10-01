@@ -5,6 +5,11 @@ export const StyledContainer = styled(Container)`
   && {
     background-color: #1b2626;
     height: 100%;
+    @media (max-width: 600px) {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
   }
 `;
 

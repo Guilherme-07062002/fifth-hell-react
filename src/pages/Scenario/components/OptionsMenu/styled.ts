@@ -12,9 +12,9 @@ export const StyledPaper = styled(Paper)`
     background-color: #151926;
 
     @media (max-width: 600px) {
-      padding-top: 3%;
-      padding-bottom: 3%;
-      height: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      height: 50vh;
     }
   }
 `;
@@ -28,6 +28,7 @@ export const StyledGrid = styled(Grid)`
     @media (max-width: 600px) {
       justify-content: space-between;
       margin-bottom: 5%;
+      margin-top: 500 !important;
     }
   }
 `;
