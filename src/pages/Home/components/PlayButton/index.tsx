@@ -1,4 +1,4 @@
-import { StyledButton as Button, StyledLink as Link } from "./styled";
+import { StyledButton as Button, StyledButtonText as Text } from "./styled";
 import { Grid } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { setLoading } from "@/store";
@@ -18,8 +18,13 @@ export const PlayButton = () => {
       justifyContent={"center"}
       alignItems={"center"}
     >
-      <Button variant="contained" size="large" onClick={handleClick}>
-        Play
+      <Button
+        variant="contained"
+        size="large"
+        color="error"
+        onClick={handleClick}
+      >
+        <Text>Play</Text>
       </Button>
     </Grid>
   );

@@ -1,13 +1,10 @@
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Button, Typography } from "@mui/material";
 import styled from "styled-components";
 import Alagard from "./assets/fonts/Alagard.ttf";
 
-export const StyledButton = styled(Button)`
-  
-`;
+export const StyledButton = styled(Button)``;
 
-export const StyledLink = styled(Link)`
+export const StyledButtonText = styled(Typography)`
   && {
     color: #ffffff;
     text-decoration: none;
