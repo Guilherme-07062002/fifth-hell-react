@@ -3,6 +3,7 @@ export enum ActionTypes {
   SET_ROLL_DICES = "app/setRollDices",
   SET_CURRENT_STAGE = "app/setCurrentStage",
   ADVANCE_STAGE = "app/advanceStage",
+  SET_DICE_VALUE = "app/setDiceValue",
 }
 
 export interface SetLoadingAction {
@@ -24,6 +25,11 @@ export interface AdvanceStageAction {
   type: ActionTypes.ADVANCE_STAGE;
 }
 
+export interface SetDiceValueAction {
+  type: ActionTypes.SET_DICE_VALUE;
+  payload: number;
+}
+
 export const setLoading = (isLoading: boolean): SetLoadingAction => ({
   type: ActionTypes.SET_LOADING,
   payload: isLoading,
@@ -43,4 +49,9 @@ export const setCurrentStage = (
 
 export const advanceStage = (): AdvanceStageAction => ({
   type: ActionTypes.ADVANCE_STAGE,
+});
+
+export const setDiceValue = (diceValue: number): SetDiceValueAction => ({
+  type: ActionTypes.SET_DICE_VALUE,
+  payload: diceValue,
 });

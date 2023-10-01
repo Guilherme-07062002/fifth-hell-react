@@ -1,18 +1,19 @@
 import { StyledDiceBox as Box } from "./styled";
 import { useMediaQuery, Theme, useTheme } from "@mui/material";
-
-type DiceBoxProps = {
-  showDices?: boolean;
-};
+import { useSelector } from "react-redux";
+import { RootStateType } from "@/store";
 
 /** Render dice box */
-export const DiceBox = (data: DiceBoxProps) => {
+export const DiceBox = () => {
+  const { rollDices } = useSelector((state: RootStateType) => state.app);
+  const backgroundValue = rollDices
+    ? "url('/src/pages/Scenario/components/OptionsMenu/components/DiceBox/assets/imgs/dice.gif')"
+    : "none";
+
   const theme = useTheme<Theme>();
-  //Use useMediaQuery to check if the screen is smaller than the tablet breakpoint
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  //If it is less than the tablet breakpoint, do not render the DiceBox
   if (isMobile) return null;
 
-  return <Box showDices={data.showDices} />;
+  return <Box style={{ backgroundImage: backgroundValue }} />;
 };

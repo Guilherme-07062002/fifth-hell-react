@@ -4,6 +4,7 @@ export const initialState = {
   isLoading: false,
   rollDices: false,
   currentStage: 0,
+  diceValue: null,
   stages: [
     {
       title: "Forest",
@@ -56,6 +57,13 @@ const appSlice = createSlice({
       } else {
         return state;
       }
+    },
+    setDiceValue: (state, action) => {
+      console.log("setDiceValue", action.payload);
+      return {
+        ...state,
+        diceValue: action.payload,
+      };
     },
   },
 });

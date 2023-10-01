@@ -5,6 +5,7 @@ import {
   SetRollDicesAction,
   SetCurrentStageAction,
   AdvanceStageAction,
+  SetDiceValueAction,
 } from "./actions";
 
 export function appReducer(
@@ -14,6 +15,7 @@ export function appReducer(
     | SetRollDicesAction
     | SetCurrentStageAction
     | AdvanceStageAction
+    | SetDiceValueAction
 ) {
   switch (action.type) {
     case ActionTypes.SET_LOADING:
@@ -24,6 +26,8 @@ export function appReducer(
       return { ...state, currentStage: action.payload };
     case ActionTypes.ADVANCE_STAGE:
       return { ...state, currentStage: state.currentStage + 1 };
+    case ActionTypes.SET_DICE_VALUE:
+      return { ...state, diceValue: action.payload };
     default:
       return state;
   }
