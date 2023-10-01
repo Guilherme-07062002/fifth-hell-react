@@ -13,7 +13,8 @@ export const StyledGrid = styled(Grid)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     height: 100vh;
+    gap: 5rem;
   }
 `;

@@ -4,10 +4,7 @@ import styled from "styled-components";
 import Alagard from "./assets/fonts/Alagard.ttf";
 
 export const StyledButton = styled(Button)`
-  && {
-    position: absolute;
-    bottom: 10vh;
-  }
+  
 `;
 
 export const StyledLink = styled(Link)`
