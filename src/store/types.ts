@@ -6,10 +6,11 @@ export interface AppData {
     [key: number]: {
       title: string;
       description: string;
+      image: string;
     };
   };
 }
 
-interface RootState {
+export interface RootStateType {
   app: AppData;
 }

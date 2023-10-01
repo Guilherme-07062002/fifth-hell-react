@@ -2,16 +2,20 @@ import { Grid } from "@mui/material";
 import { StyledPaper as Paper } from "./styled";
 import { Title, DialogBox, BackgroundImage } from "./components";
 import { useSelector } from "react-redux";
-import { RootState } from "@/store/state";
+import { RootStateType } from "@/store";
 
 /** Render Image in Scenario */
 export const Image = () => {
+  const { stages, currentStage } = useSelector(
+    (state: RootStateType) => state.app
+  );
+  const { title, description, image } = stages[currentStage];
   return (
     <Grid item xs={12} sm={8}>
       <Paper elevation={3}>
-        <Title label="Scenario" />
+        <Title label={title} />
         <DialogBox />
-        <BackgroundImage src="/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png" />
+        <BackgroundImage src={image} />
       </Paper>
     </Grid>
   );

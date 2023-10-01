@@ -8,10 +8,12 @@ export const initialState = {
     0: {
       title: "Forest",
       description: "You are in the forest",
+      image: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png",
     },
     1: {
       title: "Forest Again",
       description: "You are in the forest again",
+      image: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png",
     },
   },
 };
