@@ -20,5 +20,3 @@ export const Image = () => {
     </Grid>
   );
 };
-
-export default Image;

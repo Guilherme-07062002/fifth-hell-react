@@ -1,10 +1,10 @@
-import Image from "./components/Image";
-import OptionsMenu from "./components/OptionsMenu";
+import { Image } from "./components/Image";
+import { OptionsMenu } from "./components/OptionsMenu";
 import { useEffect } from "react";
 import { StyledContainer as Container, StyledGrid as Grid } from "./styled";
 
 /** Renderiza o cenário */
-const Scenario = () => {
+export const Scenario = () => {
   useEffect(() => {
     document.title = "Scenario";
   });
@@ -18,5 +18,3 @@ const Scenario = () => {
     </Container>
   );
 };
-
-export default Scenario;

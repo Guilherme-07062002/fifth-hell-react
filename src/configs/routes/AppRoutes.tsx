@@ -1,13 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Scenario } from "@/pages";
+import { Initial } from "@/pages";
 
 const AppRoutes: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/scenario" element={<Scenario />} />
+        <Route path="/" element={<Initial />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,2 +1,4 @@
-export { default as Home } from "./Home"
-export { default as Scenario } from './Scenario'
+export * from './Home';
+export * from './Initial';
+export * from './Loading';
+export * from './Scenario';

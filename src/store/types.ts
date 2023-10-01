@@ -3,6 +3,7 @@ export interface AppData {
   rollDices: boolean;
   currentStage: number;
   diceValue: number | null;
+  started: boolean;
   stages: {
     title: string;
     description: string;

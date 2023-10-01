@@ -3,7 +3,7 @@ import { PlayButton, HomeTitle } from "./components";
 import { StyledContainer as Container, StyledGrid as Grid } from "./styled";
 
 /** Renderiza a página inicial */
-const Home = () => {
+export const Home = () => {
   useEffect(() => {
     document.title = "Home";
   });
@@ -17,5 +17,3 @@ const Home = () => {
     </Container>
   );
 };
-
-export default Home;

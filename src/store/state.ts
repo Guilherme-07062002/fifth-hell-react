@@ -5,6 +5,7 @@ export const initialState = {
   rollDices: false,
   currentStage: 0,
   diceValue: null,
+  started: false,
   stages: [
     {
       title: "Forest",
@@ -62,6 +63,12 @@ const appSlice = createSlice({
       return {
         ...state,
         diceValue: action.payload,
+      };
+    },
+    setStarted: (state, action) => {
+      return {
+        ...state,
+        started: action.payload,
       };
     },
   },
