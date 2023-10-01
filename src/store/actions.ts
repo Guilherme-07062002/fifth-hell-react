@@ -23,3 +23,24 @@ export interface SetCurrentStageAction {
 export interface AdvanceStageAction {
   type: ActionTypes.ADVANCE_STAGE;
 }
+
+export const setLoading = (isLoading: boolean): SetLoadingAction => ({
+  type: ActionTypes.SET_LOADING,
+  payload: isLoading,
+});
+
+export const setRollDices = (rollDices: boolean): SetRollDicesAction => ({
+  type: ActionTypes.SET_ROLL_DICES,
+  payload: rollDices,
+});
+
+export const setCurrentStage = (
+  currentStage: number
+): SetCurrentStageAction => ({
+  type: ActionTypes.SET_CURRENT_STAGE,
+  payload: currentStage,
+});
+
+export const advanceStage = (): AdvanceStageAction => ({
+  type: ActionTypes.ADVANCE_STAGE,
+});
