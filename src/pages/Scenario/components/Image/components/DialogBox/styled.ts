@@ -19,7 +19,7 @@ export const StyledDialogBoxText = styled(Typography)`
     font-size: 1.5rem;
     color: #ffffff;
     text-align: justify;
-    font-family: "Alagard", sans-serif;
+    /* font-family: "Alagard", sans-serif; */
   }
   @font-face {
     font-family: "Alagard";

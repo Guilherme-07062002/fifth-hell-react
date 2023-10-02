@@ -1,4 +1,5 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { stagesData } from "./stages";
 
 export const initialState = {
   isLoading: false,
@@ -6,19 +7,7 @@ export const initialState = {
   currentStage: 0,
   diceValue: null,
   started: false,
-  stages: [
-    {
-      title: "Forest",
-      description: "You are in the forest",
-      image: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png",
-    },
-
-    {
-      title: "Forest Again",
-      description: "You are in the forest again",
-      image: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png",
-    },
-  ],
+  stages: stagesData,
 };
 
 const appSlice = createSlice({
