@@ -48,15 +48,29 @@ export const stagesData = [
   {
     title: titles.insideMine,
     description:
-      "The adventurers slowly make their way into the mine, exhausted from descending the stairs so much that they no longer knew if minutes or hours had passed. As they descended, uncertainty about what they would find increased. However, at a certain moment, they hear a thunderous noise coming from above, from the mine entrance, as if something very heavy had fallen. At the same instant, a strong wind blows from the direction of the noise, extinguishing the torches of everyone present. In that moment, they wonder if perhaps the presence they had felt earlier had something to do with this.",
+      "The adventurers slowly make their way into the mine, exhausted from descending the stairs so much that they no longer knew if minutes or hours had passed. As they descended, uncertainty about what they would find increased. However, at a certain moment, they hear a thunderous noise coming from above, from the mine entrance, as if something very heavy had fallen.",
     image: backgrounds.insideCave,
     continue: true,
   },
   {
     title: titles.insideMine,
     description:
-      "After finally accepting their inevitable fate, that they would die there, trapped in an abandoned mine in the dark without the comfort of the light from their torches, one of the travelers notices that curiously, they saw what appeared to be an ephemeral blue glow emanating from the depth of the mine (which still seemed distant). As they approach the light, they come across a large open space, which was still dark, but there they could distinguish the shapes of things, and in the middle of that place, there was a river that flowed from one end to the other, preventing them from crossing to the other side.",
+      "At the same instant, a strong wind blows from the direction of the noise, extinguishing the torches of everyone present. In that moment, they wonder if perhaps the presence they had felt earlier had something to do with this.",
     image: backgrounds.insideCave,
+    continue: true,
+  },
+  {
+    title: titles.insideMine,
+    description:
+      "After finally accepting their inevitable fate, that they would die there, trapped in an abandoned mine in the dark without the comfort of the light from their torches, one of the travelers notices that curiously, they saw what appeared to be an ephemeral blue glow emanating from the depth of the mine (which still seemed distant).",
+    image: backgrounds.insideCave,
+    continue: true,
+  },
+  {
+    title: titles.insideMine,
+    description:
+      "As they approach the light, they come across a large open space, which was still dark, but there they could distinguish the shapes of things, and in the middle of that place, there was a river that flowed from one end to the other, preventing them from crossing to the other side.",
+    image: backgrounds.caveBlue,
     continue: true,
   },
   // River of Souls Stages-------------------------------------------------------

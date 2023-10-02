@@ -11,6 +11,10 @@ export const StyledDialogBox = styled(Box)`
     position: absolute;
     bottom: 0;
     padding: 1rem;
+    opacity: 0.7;
+    @media (max-width: 600px) {
+    opacity: 0.6;
+    }
   }
 `;
 
