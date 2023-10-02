@@ -1,5 +1,10 @@
 const backgrounds = {
-  darkForest: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png",
+  darkForest: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.jpg",
+  insideCave: "/src/pages/Scenario/components/Image/assets/imgs/InsideCave.jpg",
+  caveBlue: "/src/pages/Scenario/components/Image/assets/imgs/CaveBlue.jpg",
+  caveDoor: "/src/pages/Scenario/components/Image/assets/imgs/CaveDoor.jpg",
+  manWithDragon:
+    "/src/pages/Scenario/components/Image/assets/gifs/manWithDragon.gif",
 };
 const titles = {
   darkForest: "Dark Forest",
@@ -44,14 +49,14 @@ export const stagesData = [
     title: titles.insideMine,
     description:
       "The adventurers slowly make their way into the mine, exhausted from descending the stairs so much that they no longer knew if minutes or hours had passed. As they descended, uncertainty about what they would find increased. However, at a certain moment, they hear a thunderous noise coming from above, from the mine entrance, as if something very heavy had fallen. At the same instant, a strong wind blows from the direction of the noise, extinguishing the torches of everyone present. In that moment, they wonder if perhaps the presence they had felt earlier had something to do with this.",
-    image: backgrounds.darkForest,
+    image: backgrounds.insideCave,
     continue: true,
   },
   {
     title: titles.insideMine,
     description:
       "After finally accepting their inevitable fate, that they would die there, trapped in an abandoned mine in the dark without the comfort of the light from their torches, one of the travelers notices that curiously, they saw what appeared to be an ephemeral blue glow emanating from the depth of the mine (which still seemed distant). As they approach the light, they come across a large open space, which was still dark, but there they could distinguish the shapes of things, and in the middle of that place, there was a river that flowed from one end to the other, preventing them from crossing to the other side.",
-    image: backgrounds.darkForest,
+    image: backgrounds.insideCave,
     continue: true,
   },
   // River of Souls Stages-------------------------------------------------------
@@ -59,57 +64,57 @@ export const stagesData = [
     title: titles.riverSouls,
     description:
       "At this point, the adventurers stop and observe the mysterious blue glow emanating from the waters, not quite understanding why they feel a force pulling them to jump into the water. However, before doing anything, they notice the figure of a person (or at least they hoped it was), approaching them in a boat, rowing slowly on those waters.",
-    image: backgrounds.darkForest,
+    image: backgrounds.caveBlue,
     continue: true,
   },
   {
     title: titles.riverSouls,
     description:
       "He approaches and speaks strange words that did not seem to belong to any known language. However, even if it was an unknown language (if the wizard is present, he understands what the boatman said), it was as if the adventurers could understand every word. From what they understood, the boatman was saying that in exchange for a coin, he could help them cross to the other side.",
-    image: backgrounds.darkForest,
+    image: backgrounds.caveBlue,
     continue: true,
   },
   {
     title: titles.riverSouls,
     description:
       "The adventurers search almost desperately for some change in their pockets because they couldn't afford to miss this possible opportunity that had just arisen for them to leave. Fortunately, one of them had a coin, albeit a little old. However, the boatman didn't mind, and he allowed them to board the small boat, which was just large enough for all of them, although not particularly comfortable.",
-    image: backgrounds.darkForest,
+    image: backgrounds.caveBlue,
     continue: true,
   },
   {
     title: titles.riverSouls,
     description:
       "However, in the middle of the journey, looking into the waters, they realize that this was not, in fact, an ordinary river, because what flowed beneath them were souls.",
-    image: backgrounds.darkForest,
+    image: backgrounds.caveBlue,
     continue: true,
   },
   // Entrance to the Underworld Stages-------------------------------------------
   {
-    title: titles.entranceUnderworld,
+    title: titles.riverSouls,
     description:
       "As they arrive on the other side, they disembark from the boat. However, the moment the last adventurer touches their feet on the ground, when they turn around to thank the unknown boatman, there's no one there anymore.",
-    image: backgrounds.darkForest,
+    image: backgrounds.caveBlue,
     continue: true,
   },
   {
     title: titles.entranceUnderworld,
     description:
       "They then enter what appears to be a large gate in front of them and walk through some tunnels, not knowing exactly where they are going, but it's as if deep down, some kind of intuition is guiding them along this path.",
-    image: backgrounds.darkForest,
+    image: backgrounds.caveDoor,
     continue: true,
   },
   {
     title: titles.entranceUnderworld,
     description:
       "After some time of walking, they come across figures that look like skeletons surrounding a hooded man holding a shining staff. They seemed to be in some sort of ritual, with various bodies of the missing people lying on the ground. As the skeletons notice the presence of the adventurers, they move towards them aggressively.",
-    image: backgrounds.darkForest,
+    image: backgrounds.manWithDragon,
     rollDice: true,
   },
   {
     title: titles.entranceUnderworld,
     description:
       'After defeating the skeletons, the adventurers observe the hooded man standing in front of what seemed to be the carcass of a dead dragon. As they approach, the tall man who covered his face turns around and begins to walk toward them, speaking calmly with his deep voice: "You have interrupted the ritual, and you will pay for it!"',
-    image: backgrounds.darkForest,
+    image: backgrounds.manWithDragon,
     rollDice: true,
   },
 ];
