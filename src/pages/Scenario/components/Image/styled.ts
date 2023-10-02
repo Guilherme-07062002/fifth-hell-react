@@ -7,7 +7,7 @@ export const StyledPaper = styled(Paper)`
     background-color: #151926;
     position: relative;
     @media (max-width: 600px) {
-      height: 80vh;
+      height: 70vh;
     }
   }
 `;
