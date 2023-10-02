@@ -41,7 +41,14 @@ export const stagesData = [
   {
     title: titles.mineEntrance,
     description:
-      "After some time of walking, they come across the entrance of what seemed to be a kind of ruined mine that appeared to have been abandoned a long time ago, and they realize that the whispers have ceased. Now, all they could hear was the silence and the beating of their own hearts. So, they gather to decide whether to enter or not. (And to be honest, for them, any spooky hole seemed safer than staying outside at the mercy of anything that could jump out from the trees).",
+      "After some time of walking, they come across the entrance of what seemed to be a kind of ruined mine that appeared to have been abandoned a long time ago, and they realize that the whispers have ceased. Now, all they could hear was the silence and the beating of their own hearts.",
+    image: backgrounds.darkForest,
+    continue: true,
+  },
+  {
+    title: titles.mineEntrance,
+    description:
+      "So, they gather to decide whether to enter or not. (And to be honest, for them, any spooky hole seemed safer than staying outside at the mercy of anything that could jump out from the trees).",
     image: backgrounds.darkForest,
     rollDice: true,
   },
@@ -130,5 +137,6 @@ export const stagesData = [
       'After defeating the skeletons, the adventurers observe the hooded man standing in front of what seemed to be the carcass of a dead dragon. As they approach, the tall man who covered his face turns around and begins to walk toward them, speaking calmly with his deep voice: "You have interrupted the ritual, and you will pay for it!"',
     image: backgrounds.manWithDragon,
     rollDice: true,
+    theEnd: true,
   },
 ];

@@ -10,11 +10,15 @@ type OptionButtonProps = {
 /** Render button in options menu */
 export const OptionButton = (data: OptionButtonProps) => {
   const dispatch = useDispatch();
-  const {collapseDialogBox} = useSelector((state: RootStateType) => state.app);
+  const { collapseDialogBox, stages, currentStage } = useSelector(
+    (state: RootStateType) => state.app
+  );
+  const isTheEnd = stages[currentStage].theEnd;
   const handleClick = () => {
     dispatch(advanceStage());
   };
-  if(collapseDialogBox) return null
+  if (collapseDialogBox || isTheEnd) return null;
+
   return (
     <Button
       variant="contained"

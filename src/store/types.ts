@@ -10,6 +10,7 @@ export interface AppData {
     image: string;
     continue?: string;
     rollDice?: boolean;
+    theEnd?: boolean;
   }[];
   collapseDialogBox: boolean;
 }
