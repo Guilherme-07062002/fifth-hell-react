@@ -8,6 +8,8 @@ export interface AppData {
     title: string;
     description: string;
     image: string;
+    continue?: string;
+    rollDice?: boolean;
   }[];
 }
 
