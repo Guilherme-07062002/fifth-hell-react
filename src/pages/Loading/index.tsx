@@ -1,10 +1,16 @@
+import { Box, Grid } from "@mui/material";
 import { StyledContainer as Container } from "./styled";
-import { LoadingText } from "./Text";
 
+/** Render loading screen */
 export const LoadingScreen = () => {
   return (
     <Container component="main" maxWidth={false}>
-      <LoadingText />
+      <Grid display={"flex"} flexDirection={"column"}>
+        <Box
+          component={"img"}
+          src="/src/pages/Loading/assets/gifs/loading.gif"
+        ></Box>
+      </Grid>
     </Container>
   );
 };

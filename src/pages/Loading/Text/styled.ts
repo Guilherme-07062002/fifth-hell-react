@@ -9,7 +9,7 @@ export const StyledLoadingText = styled(Typography)`
     text-align: center;
     font-family: "Thertole", sans-serif;
     @media (max-width: 600px) {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
   @font-face {
