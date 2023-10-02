@@ -5,7 +5,7 @@ import Alagard from "./assets/fonts/Alagard.ttf";
 export const StyledDialogBox = styled(Box)`
   && {
     height: auto;
-    transition: all 0.5s ease;
+    transition: all 2s ease !important;
     width: 100%;
     background-color: black;
     position: absolute;
@@ -13,7 +13,10 @@ export const StyledDialogBox = styled(Box)`
     padding: 1rem;
     opacity: 0.7;
     @media (max-width: 600px) {
-    opacity: 0.6;
+      opacity: 0.6;
+    }
+    &.collapsed {
+      height: 10%;
     }
   }
 `;
@@ -24,6 +27,11 @@ export const StyledDialogBoxText = styled(Typography)`
     color: #ffffff;
     text-align: justify;
     /* font-family: "Alagard", sans-serif; */
+    transition: all 1s ease !important;
+
+    &.collapsed {
+      display: none;
+    }
   }
   @font-face {
     font-family: "Alagard";

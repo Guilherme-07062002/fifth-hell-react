@@ -5,6 +5,8 @@ import {
 
 import { Indicator } from "../Indicator";
 import { CollapsesButton } from "../CollapsesButton";
+import { useSelector } from "react-redux";
+import { RootStateType } from "@/store";
 
 type DialogBoxProps = {
   text: string;
@@ -13,11 +15,17 @@ type DialogBoxProps = {
 /** Render dialog box in Image */
 export const DialogBox = (data: DialogBoxProps) => {
   const { text } = data;
+  const collapseDialogBox = useSelector(
+    (state: RootStateType) => state.app.collapseDialogBox
+  );
+
   return (
-    <Box component="div">
+    <Box component="div" className={collapseDialogBox ? "collapsed" : ""}>
       <CollapsesButton />
       <Indicator />
-      <Typography>{text}</Typography>
+      <Typography className={collapseDialogBox ? "collapsed" : ""}>
+        {text}
+      </Typography>
     </Box>
   );
 };
