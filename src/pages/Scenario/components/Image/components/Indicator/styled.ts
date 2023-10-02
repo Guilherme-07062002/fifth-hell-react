@@ -6,6 +6,9 @@ export const StyledBox = styled(Box)`
     position: absolute;
     right: 2%;
     top: -20%;
+    @media (max-width: 600px) {
+      top: -10%;
+    }
   }
 `;
 
