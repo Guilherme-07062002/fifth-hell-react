@@ -19,6 +19,7 @@ export const OptionDiceButton = (data: OptionDiceButtonProps) => {
   const [indicatorColor, setIndicatorColor] = useState(false);
   useEffect(() => {
     if (rollDice) setIndicatorColor(true);
+    else setIndicatorColor(false);
   });
 
   const { sides, label } = data;

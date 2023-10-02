@@ -3,6 +3,7 @@ import {
   StyledDialogBoxText as Typography,
 } from "./styled";
 
+import { Indicator } from "../Indicator";
 type DialogBoxProps = {
   text: string;
 };
@@ -12,6 +13,7 @@ export const DialogBox = (data: DialogBoxProps) => {
   const { text } = data;
   return (
     <Box component="div">
+      <Indicator />
       <Typography>{text}</Typography>
     </Box>
   );
