@@ -15,4 +15,10 @@ export const StyledOptionDiceButton = styled(Button)`
       width: 95%;
     }
   }
+  &.active-button {
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+    border-image: linear-gradient(45deg, yellow, #ff6600);
+    border-image-slice: 1;
+  }
 `;

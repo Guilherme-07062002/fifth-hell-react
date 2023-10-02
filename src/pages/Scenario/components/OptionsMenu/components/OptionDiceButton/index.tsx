@@ -1,7 +1,9 @@
 import { Grid } from "@mui/material";
 import { StyledOptionDiceButton as Button } from "./styled";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setRollDices, setDiceValue } from "@/store";
+import { RootStateType } from "@/store";
+import { useState, useEffect } from "react";
 
 type OptionDiceButtonProps = {
   label: string;
@@ -10,6 +12,15 @@ type OptionDiceButtonProps = {
 
 /** Render button in options menu */
 export const OptionDiceButton = (data: OptionDiceButtonProps) => {
+  const { currentStage, stages } = useSelector(
+    (state: RootStateType) => state.app
+  );
+  const { rollDice } = stages[currentStage];
+  const [indicatorColor, setIndicatorColor] = useState(false);
+  useEffect(() => {
+    if (rollDice) setIndicatorColor(true);
+  });
+
   const { sides, label } = data;
   const dispatch = useDispatch();
   const handleClick = () => {
@@ -28,7 +39,12 @@ export const OptionDiceButton = (data: OptionDiceButtonProps) => {
       md={2}
       style={{ display: "flex", justifyContent: "center" }}
     >
-      <Button variant="contained" size="large" onClick={handleClick}>
+      <Button
+        variant="contained"
+        size="large"
+        onClick={handleClick}
+        className={indicatorColor ? "active-button" : ""}
+      >
         {label}
       </Button>
     </Grid>
