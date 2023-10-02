@@ -5,6 +5,7 @@ export enum ActionTypes {
   ADVANCE_STAGE = "app/advanceStage",
   SET_DICE_VALUE = "app/setDiceValue",
   SET_STARTED = "app/setStarted",
+  COLLAPSE_DIALOG_BOX = "app/collapseDialogBox",
 }
 
 export interface SetLoadingAction {
@@ -36,6 +37,10 @@ export interface SetStartedAction {
   payload: boolean;
 }
 
+export interface CollapseDialogBoxAction {
+  type: ActionTypes.COLLAPSE_DIALOG_BOX;
+}
+
 export const setLoading = (isLoading: boolean): SetLoadingAction => ({
   type: ActionTypes.SET_LOADING,
   payload: isLoading,
@@ -65,4 +70,8 @@ export const setDiceValue = (diceValue: number | null): SetDiceValueAction => ({
 export const setStarted = (started: boolean): SetStartedAction => ({
   type: ActionTypes.SET_STARTED,
   payload: started,
+});
+
+export const setCollapseDialogBox = (): CollapseDialogBoxAction => ({
+  type: ActionTypes.COLLAPSE_DIALOG_BOX,
 });

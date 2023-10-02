@@ -8,6 +8,7 @@ export const initialState = {
   diceValue: null,
   started: false,
   stages: stagesData,
+  collapseDialogBox: false,
 };
 
 const appSlice = createSlice({
@@ -60,6 +61,12 @@ const appSlice = createSlice({
         started: action.payload,
       };
     },
+    collapseDialogBox: (state) => {
+      return {
+        ...state,
+        collapseDialogBox: !state.collapseDialogBox,
+      };
+    }
   },
 });
 

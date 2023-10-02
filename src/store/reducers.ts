@@ -7,6 +7,7 @@ import {
   AdvanceStageAction,
   SetDiceValueAction,
   SetStartedAction,
+  CollapseDialogBoxAction,
 } from "./actions";
 
 export function appReducer(
@@ -18,6 +19,7 @@ export function appReducer(
     | AdvanceStageAction
     | SetDiceValueAction
     | SetStartedAction
+    | CollapseDialogBoxAction
 ) {
   switch (action.type) {
     case ActionTypes.SET_LOADING:
@@ -32,6 +34,8 @@ export function appReducer(
       return { ...state, diceValue: action.payload };
     case ActionTypes.SET_STARTED:
       return { ...state, started: action.payload };
+    case ActionTypes.COLLAPSE_DIALOG_BOX:
+      return { ...state, collapseDialogBox: !state.collapseDialogBox };
     default:
       return state;
   }

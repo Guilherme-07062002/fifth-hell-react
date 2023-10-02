@@ -11,6 +11,7 @@ export interface AppData {
     continue?: string;
     rollDice?: boolean;
   }[];
+  collapseDialogBox: boolean;
 }
 
 export interface RootStateType {
