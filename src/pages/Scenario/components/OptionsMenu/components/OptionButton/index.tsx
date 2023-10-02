@@ -1,6 +1,7 @@
 import { StyledOptionButton as Button } from "./styled";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { advanceStage } from "@/store";
+import { RootStateType } from "@/store";
 
 type OptionButtonProps = {
   label: string;
@@ -9,9 +10,11 @@ type OptionButtonProps = {
 /** Render button in options menu */
 export const OptionButton = (data: OptionButtonProps) => {
   const dispatch = useDispatch();
+  const {collapseDialogBox} = useSelector((state: RootStateType) => state.app);
   const handleClick = () => {
     dispatch(advanceStage());
   };
+  if(collapseDialogBox) return null
   return (
     <Button
       variant="contained"
