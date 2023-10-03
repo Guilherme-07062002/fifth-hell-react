@@ -1,10 +1,10 @@
 const backgrounds = {
-  darkForest: "/src/pages/Scenario/components/Image/assets/imgs/ForestDark.jpg",
-  insideCave: "/src/pages/Scenario/components/Image/assets/imgs/InsideCave.jpg",
-  caveBlue: "/src/pages/Scenario/components/Image/assets/imgs/CaveBlue.jpg",
-  caveDoor: "/src/pages/Scenario/components/Image/assets/imgs/CaveDoor.jpg",
+  darkForest: "src/pages/Scenario/components/Image/assets/imgs/ForestDark.jpg",
+  insideCave: "src/pages/Scenario/components/Image/assets/imgs/InsideCave.jpg",
+  caveBlue: "src/pages/Scenario/components/Image/assets/imgs/CaveBlue.jpg",
+  caveDoor: "src/pages/Scenario/components/Image/assets/imgs/CaveDoor.jpg",
   manWithDragon:
-    "/src/pages/Scenario/components/Image/assets/gifs/manWithDragon.gif",
+    "src/pages/Scenario/components/Image/assets/gifs/manWithDragon.gif",
 };
 const titles = {
   darkForest: "Dark Forest",

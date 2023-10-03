@@ -8,7 +8,7 @@ export const DiceBox = () => {
     (state: RootStateType) => state.app
   );
   const backgroundImage = rollDices
-    ? "url('/src/pages/Scenario/components/OptionsMenu/components/DiceBox/assets/imgs/dice4.gif')"
+    ? "url('src/pages/Scenario/components/OptionsMenu/components/DiceBox/assets/imgs/dice4.gif')"
     : "none";
   const backgroundColor = rollDices ? "transparent" : "#0F121C";
 
