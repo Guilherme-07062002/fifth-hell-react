@@ -8,7 +8,7 @@ export const DiceBox = () => {
     (state: RootStateType) => state.app
   );
   const backgroundImage = rollDices
-    ? "url('src/pages/Scenario/components/OptionsMenu/components/DiceBox/assets/imgs/dice4.gif')"
+    ? "url('https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/OptionsMenu/components/DiceBox/assets/imgs/dice4.gif?raw=true')"
     : "none";
   const backgroundColor = rollDices ? "transparent" : "#0F121C";
 

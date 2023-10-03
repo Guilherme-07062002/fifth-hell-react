@@ -8,7 +8,7 @@ export const LoadingScreen = () => {
       <Grid display={"flex"} flexDirection={"column"}>
         <Box
           component={"img"}
-          src="/src/pages/Loading/assets/gifs/loading.gif"
+          src="https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Loading/assets/gifs/loading.gif?raw=true"
         ></Box>
       </Grid>
     </Container>

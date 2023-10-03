@@ -1,10 +1,14 @@
 const backgrounds = {
-  darkForest: "src/pages/Scenario/components/Image/assets/imgs/ForestDark.jpg",
-  insideCave: "src/pages/Scenario/components/Image/assets/imgs/InsideCave.jpg",
-  caveBlue: "src/pages/Scenario/components/Image/assets/imgs/CaveBlue.jpg",
-  caveDoor: "src/pages/Scenario/components/Image/assets/imgs/CaveDoor.jpg",
+  darkForest:
+    "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/ForestDark.jpg?raw=true",
+  insideCave:
+    "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/InsideCave.jpg?raw=true",
+  caveBlue:
+    "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/CaveBlue.jpg?raw=true",
+  caveDoor:
+    "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/CaveDoor.jpg?raw=true",
   manWithDragon:
-    "src/pages/Scenario/components/Image/assets/gifs/manWithDragon.gif",
+    "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/gifs/manWithDragon.gif?raw=true",
 };
 const titles = {
   darkForest: "Dark Forest",
