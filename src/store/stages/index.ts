@@ -1,3 +1,4 @@
+// background urls:
 const backgrounds = {
   darkForest:
     "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/ForestDark.jpg?raw=true",
