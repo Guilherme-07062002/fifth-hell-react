@@ -14,7 +14,7 @@ export const StyledPaper = styled(Paper)`
     @media (max-width: 600px) {
       padding-top: 5%;
       padding-bottom: 5%;
-      height: 50vh;
+      height: 60vh;
     }
   }
 `;

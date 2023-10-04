@@ -14,6 +14,9 @@ export const StyledDiceBox = styled(Box)`
     justify-content: center;
     align-items: center;
     transition: background-color 0.5s ease;
+    @media (max-width: 600px) {
+      margin-top: 0.5rem;
+    }
   }
 `;
 

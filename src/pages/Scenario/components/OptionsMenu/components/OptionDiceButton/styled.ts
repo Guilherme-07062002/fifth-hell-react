@@ -11,6 +11,7 @@ export const StyledOptionDiceButton = styled(Button)`
       background-color: #7d1a3a;
     }
     @media (max-width: 600px) {
+      margin-top: 1rem;
       height: 100%;
       width: 95%;
     }

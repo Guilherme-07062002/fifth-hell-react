@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 type OptionDiceButtonProps = {
   label: string;
   sides: number;
+  isd20?: boolean;
 };
 
 /** Render button in options menu */
@@ -22,7 +23,7 @@ export const OptionDiceButton = (data: OptionDiceButtonProps) => {
     else setIndicatorColor(false);
   });
 
-  const { sides, label } = data;
+  const { sides, label, isd20 } = data;
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(setRollDices(true));
@@ -35,10 +36,15 @@ export const OptionDiceButton = (data: OptionDiceButtonProps) => {
   return (
     <Grid
       item
-      xs={6}
+      xs={isd20 ? 10 : 6}
       sm={6}
-      md={2}
-      style={{ display: "flex", justifyContent: "center" }}
+      md={6}
+      lg={2}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        marginBottom: "1rem",
+      }}
     >
       <Button
         variant="contained"
