@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "src": "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/ForestDark.png",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=86400"
+                }
+            ]
+        },
+        {
+            "src": "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/Cave.png",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=86400"
+                }
+            ]
+        },
+        {
+            "src": "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/Image/assets/imgs/Hades.png",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=86400"
+                }
+            ]
+        }
+    ]
+}
