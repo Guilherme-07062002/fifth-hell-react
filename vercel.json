@@ -18,6 +18,18 @@
             "headers": {
                 "Cache-Control": "public, max-age=86400"
             }
+        },
+        {
+            "src": "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Scenario/components/OptionsMenu/components/DiceBox/assets/imgs/dice4.gif?raw=true",
+            "headers": {
+                "Cache-Control": "public, max-age=86400"
+            }
+        },
+        {
+            "src": "https://github.com/Guilherme-07062002/fifth-hell-react/blob/main/src/pages/Loading/assets/gifs/loading.gif?raw=true",
+            "headers": {
+                "Cache-Control": "public, max-age=86400"
+            }
         }
     ]
 }
